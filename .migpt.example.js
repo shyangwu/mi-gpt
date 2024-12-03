@@ -12,7 +12,7 @@ const botProfile = `
 const masterProfile = `
 性别：男
 性格：善良正直
-其他：总是舍己为人，是傻妞的主人。
+其他：5岁阳光小男孩，天马行空，是豆包的主人。
 `.trim();
 
 // 系统 Prompt 模板，可以更灵活的控制 AI 的各种行为规则，和是否需要携带上下文等
@@ -78,11 +78,11 @@ Bad example: "2024年02月28日星期三 23:01 {{botName}}: 我是{{botName}}"
 export default {
   systemTemplate,
   bot: {
-    name: "傻妞",
+    name: "豆包",
     profile: botProfile,
   },
   master: {
-    name: "陆小千",
+    name: "波猪",
     profile: masterProfile,
   },
   speaker: {
@@ -91,9 +91,9 @@ export default {
      */
 
     // 小米 ID
-    userId: "987654321", // 注意：不是手机号或邮箱，请在「个人信息」-「小米 ID」查看
+    userId: "67670281", // 注意：不是手机号或邮箱，请在「个人信息」-「小米 ID」查看
     // 账号密码
-    password: "123456",
+    password: "xue669090",
     // 小爱音箱 DID 或在米家中设置的名称
     did: "小爱音箱Pro", // 注意空格、大小写和错别字（音响 👉 音箱）
 
@@ -102,15 +102,15 @@ export default {
      */
 
     // 当消息以下面的关键词开头时，会调用 AI 来回复消息
-    callAIKeywords: ["请", "你", "傻妞"],
+    callAIKeywords: ["请", "你", "豆包"],
     // 当消息以下面的关键词开头时，会进入 AI 唤醒状态
     wakeUpKeywords: ["打开", "进入", "召唤"],
     // 当消息以下面的关键词开头时，会退出 AI 唤醒状态
     exitKeywords: ["关闭", "退出", "再见"],
     // 进入 AI 模式的欢迎语
-    onEnterAI: ["你好，我是傻妞，很高兴认识你"], // 设为空数组时可关闭提示语
+    onEnterAI: ["你好，我是豆包，很高兴认识你"], // 设为空数组时可关闭提示语
     // 退出 AI 模式的提示语
-    onExitAI: ["傻妞已退出"], // 为空时可关闭提示语
+    onExitAI: ["豆包已退出"], // 为空时可关闭提示语
     // AI 开始回答时的提示语
     onAIAsking: ["让我先想想", "请稍等"], // 为空时可关闭提示语
     // AI 结束回答时的提示语
